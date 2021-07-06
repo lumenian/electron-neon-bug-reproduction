@@ -22,7 +22,7 @@ export default {
     },
   },
   mounted() {
-    // Create PIXI application for strategy subcells rendering
+    // Create PIXI application
     this.pixiApp = PIXI.Application({
       width: 100,
       height: 100,
