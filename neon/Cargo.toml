@@ -1,0 +1,14 @@
+[package]
+name = "neon"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "bindings"
+crate-type = ["cdylib"]
+
+[dependencies]
+neon = { version = "0.8.3", default-features = false, features = ["napi-6", "event-queue-api"] }
+
+[build-dependencies]
+neon-build = "0.8.3"
